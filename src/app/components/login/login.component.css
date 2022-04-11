@@ -1,0 +1,45 @@
+
+.sec-login {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(45deg, rgba(87, 58, 250, 0.884) 0%, rgba(116, 15, 214, 0.9) 100%);
+
+}
+
+.sec2 {
+  background: linear-gradient(45deg, rgba(87, 58, 250, 0.884) 0%, rgba(116, 15, 214, 0.9) 100%);
+
+}
+.sec3 {
+  height: 295px;
+  background: linear-gradient(45deg, rgba(87, 58, 250, 0.884) 0%, rgba(116, 15, 214, 0.9) 100%);
+
+}
+
+
+.form {
+  position: absolute;
+  width: 500px;
+  height: 400px;
+  /* background: linear-gradient(45deg, rgba(87, 58, 250, 0.884) 0%, rgba(116, 15, 214, 0.9) 100%); */
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+}
+
+
+
+input {
+
+  width: 380px;
+}
+
+label {
+  left: 12%;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}

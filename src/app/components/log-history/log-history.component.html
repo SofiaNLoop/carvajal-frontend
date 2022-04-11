@@ -1,0 +1,44 @@
+<app-nav></app-nav>
+
+<main id="main">
+
+  <!-- ======= Breadcrumbs ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>Historial de Registro de tu Lista de Deseos</h2>
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>Historial</li>
+        </ol>
+      </div>
+
+    </div>
+  </section><!-- End Breadcrumbs -->
+
+  <section class="inner-page">
+    <div class="container">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Nombre Producto</th>
+            <th scope="col">Categoria</th>
+            <th scope="col">Stock</th>
+            <th scope="col">Fecha en que se añadio a la lista</th>
+          </tr>
+        </thead>
+        <tbody *ngFor="let i of listHistory">
+          <tr>
+            <th scope="row">{{i.name}}</th>
+            <td>{{i.category}}</td>
+            <td>{{i.stock}}</td>
+            <td>{{i.date_add}}</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main><!-- End #main -->

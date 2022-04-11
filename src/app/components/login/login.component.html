@@ -1,0 +1,49 @@
+
+<!-- <section class="sec-login">
+
+  <form  class="form">
+    <h2 class="text-center pt-3 pb-5" >Inicia Sesión</h2>
+    <div class="form-floating mb-5">
+      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+      <label for="floatingInput">Email address</label>
+    </div>
+    <div class="form-floating mb-5">
+      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+      <label for="floatingPassword">Password</label>
+    </div>
+    <div class="center-button">
+      <button type="submit" class="btn btn-primary">Ingresar</button>
+    </div>
+
+  </form>
+</section>
+
+<section class="sec2"></section>
+<section class="sec3"></section> -->
+<!-- <section class="sec4"></section> -->
+
+
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+
+  <div class="container-fluid" data-aos="fade-up">
+    <div class="row justify-content-center">
+      <form [formGroup]="loginForm" (ngSubmit)="login()" class="form">
+        <h2 class="text-center text-black  pt-3 pb-5" >Inicia Sesión</h2>
+        <div class="form-floating mb-5">
+          <input formControlName="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+          <label for="floatingInput">Email address</label>
+        </div>
+        <div class="form-floating mb-5">
+          <input formControlName="password" type="password" class="form-control" id="floatingPassword" placeholder="Password">
+          <label for="floatingPassword">Password</label>
+        </div>
+        <div class="center-button">
+          <button type="submit" class="btn btn-primary">Ingresar</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+</section><!-- End Hero -->

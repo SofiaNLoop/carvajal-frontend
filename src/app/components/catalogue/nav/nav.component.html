@@ -1,0 +1,21 @@
+<header id="header" class="fixed-top header-inner-pages">
+  <div class="container d-flex align-items-center justify-content-between">
+    <h1 class="logo"><a href="index.html">Reto Carvajal</a></h1>
+    <!-- Uncomment below if you prefer to use an image logo -->
+    <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li><a class="nav-link scrollto " href="#hero">Home</a></li>
+        <li><a class="nav-link scrollto " [routerLink]="['/catalogue']" routerLinkActive="router-link-active" >Catálogo de Productos</a></li>
+        <li><a class="nav-link scrollto " [routerLink]="['/wishlist']" routerLinkActive="router-link-active" >Wish List</a></li>
+        <li><a class="nav-link scrollto " [routerLink]="['/history']" routerLinkActive="router-link-active" >Historial de Registro</a></li>
+
+        <!-- <li><a class="nav-link scrollto " href="#hero">Historial</a></li> -->
+        <!-- <li><a class="getstarted scrollto" href="#about">Get Started</a></li> -->
+      </ul>
+      <i class="bi bi-list mobile-nav-toggle"></i>
+    </nav><!-- .navbar -->
+
+  </div>
+</header><!-- End Header -->

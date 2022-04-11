@@ -1,0 +1,60 @@
+<main id="main">
+
+  <!-- ======= Breadcrumbs ======= -->
+  <section class="breadcrumbs">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <h2>Mi Lista de Deseos</h2>
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li>Wish List</li>
+        </ol>
+      </div>
+
+    </div>
+  </section><!-- End Breadcrumbs -->
+
+  <section class="inner-page">
+    <div class="container">
+
+      <div class="wishlist">
+
+        <div class="prod-wish">
+
+          <div *ngIf="wishProd.length == 0" >
+            <h1>No has añadido productos a tu lista de deseos!</h1>
+          </div>
+
+          <div class="card-wish" *ngFor="let i of wishProd">
+
+            <div class="img-wish">
+              <img  src="{{ i.img }}" alt="img">
+            </div>
+
+            <div class="desc-wish"  >
+              <p> <strong>Nombre:</strong>  {{i.name}} </p>
+              <p><strong>Precio:</strong> {{i.price}} </p>
+              <p><strong>Stock:</strong>  {{i.stock_quantity}} </p>
+              <p> <strong>Eliminar de:  </strong>
+                  <button  (click)="delProd( i._id )" type="button" class="btn btn-outline-primary">Wish List</button>
+              </p>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+    <!-- <div class="pag-wish">
+      <button type="button" class="btn btn-dark">Prev</button>
+      <button type="button" class="btn btn-dark">Next</button>
+    </div> -->
+  </section>
+
+</main><!-- End #main -->
